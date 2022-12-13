@@ -4,7 +4,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.mengsoft.admin.entity.SysUser;
 import org.mengsoft.admin.service.SysUserService;
 import org.mengsoft.admin.mapper.SysUserMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author menglingjun
@@ -15,6 +18,13 @@ import org.springframework.stereotype.Service;
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser>
     implements SysUserService{
 
+//    @Autowired
+//    SysUserMapper sysUserMapper;
+
+    @Override
+    public List<SysUser> getAllUser() {
+        return null;
+    }
 }
 
 
